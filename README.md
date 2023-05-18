@@ -17,6 +17,18 @@ Here's an overview of what the code does:
 10. The valueLine variable is set as the HTML content of the "value" element, displaying the sorted and formatted CSS code.
 11. An event listener is also added to the "copyBtn" element, which copies the content of the "value" element to the clipboard when clicked.
 
+We do not currently support custom and preset functionalities. Please wait for future updates. The current sorting order is as follows:
+
+"display", "visibility", "overflow", "float", "clear", "position", "top", "right", "bottom", "left",
+"zindex", "width", "height", "margin", "margin-top", "margin-right", "margin-bottom", "margin-left",
+"padding", "padding-top", "padding-right", "padding-bottom", "padding-left", "border", "border-top", "border-right",
+"border-bottom", "border-left", "background", "background-image", "background-position", "background-size",
+"background-repeat", "font", "font-family", "font-size", "font-weight", "color", "letter-spacing", "text-align",
+"text-decoration", "text-indent", "vertical-align", "white-space", "line-height", "animation", "animation-delay",
+"animation-duration", "animation-direction"
+
+The CSS properties will be sorted according to this order.
+
 ----------------------------------------------------------------------------
 
 제공된 코드는 CSS 코드의 정렬과 포매팅을 처리하는 JavaScript 코드 조각입니다. "playBtn" 요소의 클릭 이벤트를 감지하고, "textarea" 요소에 입력된 CSS 코드에 대해 정렬과 포매팅 작업을 수행합니다.
@@ -35,3 +47,17 @@ CSS 규칙은 속성과 값으로 개별적으로 분리됩니다.
 포맷팅된 CSS 코드는 valueLine 변수에 할당됩니다.
 valueLine 변수는 "value" 요소의 HTML 내용으로 설정되어 정렬된 포맷팅된 CSS 코드를 표시합니다.
 "copyBtn" 요소에도 이벤트 리스너가 추가되어 클릭할 때 "value" 요소의 내용이 클립보드로 복사됩니다.
+
+아직 custom과 preset 기능을 지원하지 않습니다 기다려주세요 :) 
+
+현재 정렬 기준은 
+
+"display", "visibility", "overflow", "float", "clear", "position", "top", "right", "bottom", "left",
+"zindex", "width", "height", "margin", "margin-top","margin-right","margin-bottom","margin-left",
+"padding", "padding-top","padding-right","padding-bottom","padding-left","border","border-top","border-right",
+"border-bottom","border-left", "background","background-image","background-position","background-size",
+"background-repact", "font","font-family","font-size","font-weight","color", "letter-spacing", "text-align",
+"text-decoration", "text-indent", "verticalalign", "white-space","line-height","Animation","animation-delay",
+"animation-duration","animation-direction"
+
+순으로 정렬됩니다.
