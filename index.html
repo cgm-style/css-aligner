@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css list clear</title>
+
+    <style></style>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <h1>css list clear</h1>
+    <div class="menuBtn" tabindex="1">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="menu">
+        <div class="menu_inner">
+            <div class="custom">custom</div>
+            <div class="preset">preset</div>
+        </div>
+    </div>
+    <textarea type="text" placeholder="input css"></textarea>
+    <button class="basic">play</button>
+    <button class="copy">copy</button>
+    <p class="value"></p>
+
+
+    <script>
+        const menuBtn = document.querySelector(".menuBtn");
+        const menu = document.querySelector('.menu');
+
+        menuBtn.addEventListener('click',()=>{
+            menu.classList.toggle('active');
+            menuBtn.classList.toggle('active');
+        })
+        menuBtn.addEventListener('focus',()=>{
+            menu.classList.toggle('active');
+            menuBtn.classList.toggle('active');
+        })
+        menuBtn.addEventListener('keydown',(e)=>{
+            if(e.code == "Enter"){
+                menu.classList.toggle('active');
+                menuBtn.classList.toggle('active');
+            }
+        })
+    </script>
+</body>
+</html>
