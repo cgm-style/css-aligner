@@ -11,7 +11,7 @@ const textarea = document.querySelector("textarea"),
 
                 function sortCSS(css) {
                     // CSS 파싱
-                    let slidecss = css.replace(/\n/g,'').replace(/    /g,'').split("@");
+                    let slidecss = css.replace(/\n/g,'').replace(/    /g,'').replace(/^\s+|\s+$/gm,'').split("@");
                     let cssKuting = [];
                     const slicsKut = [];
                     let wowSlice = [];
