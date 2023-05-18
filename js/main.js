@@ -1,22 +1,3 @@
-const menuBtn = document.querySelector(".menuBtn");
-    const menu = document.querySelector('.menu');
-
-    menuBtn.addEventListener('click',()=>{
-        menu.classList.toggle('active');
-        menuBtn.classList.toggle('active');
-    })
-    menuBtn.addEventListener('focus',()=>{
-        menu.classList.toggle('active');
-        menuBtn.classList.toggle('active');
-    })
-    menuBtn.addEventListener('keydown',(e)=>{
-        if(e.code == "Enter"){
-            menu.classList.toggle('active');
-            menuBtn.classList.toggle('active');
-        }
-    })
-
-
 const textarea = document.querySelector("textarea"),
         playBtn = document.querySelector(".basic"),
         copyBtn = document.querySelector(".copy");
