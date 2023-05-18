@@ -8,6 +8,7 @@
 
     <style></style>
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
 </head>
 <body>
     <h1>css list clear</h1>
@@ -32,7 +33,7 @@
         const menuBtn = document.querySelector(".menuBtn");
         const menu = document.querySelector('.menu');
 
-        menuBtn.addEventListener('click',()=>{
+        menuBtn.addEventListener('mousedown',()=>{
             menu.classList.toggle('active');
             menuBtn.classList.toggle('active');
         })
